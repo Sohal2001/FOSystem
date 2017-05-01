@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+        <!-- Email Label -->
+
+            <EditText android:id="@+id/credit_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+        <!-- Password Label -->
+
+            <EditText
+                android:text="Add Payment Mehod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/new_payment" />
+
+
+
+
+
+    </LinearLayout>
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ordering.food.fosystem.activity.usersetting"
+    android:background="@drawable/bg8"
+    android:padding="10dp"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="468dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.90"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioTime"
+            android:layout_marginTop="16dp"
+            android:text="Type :" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinnerType"
+            android:layout_marginTop="19dp"
+            android:text="Category :" />
+
+        <TextView
+            android:id="@+id/txtrestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="100px"
+            android:textStyle="bold" />
+
+
+        <Spinner
+            android:id="@+id/spinnerCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5"
+            android:layout_marginTop="18dp" />
+
+        <Spinner
+            android:id="@+id/spinnerType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView7"
+            android:layout_marginTop="18dp" />
+
+        <Button
+            android:id="@+id/btnNextToOrder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/btn_login_bg"
+            android:text="Next"
+            android:textColor="@color/btn_login"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioGroup
+            android:id="@+id/radioTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtrestaurant"
+            android:layout_marginTop="31dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonlunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtrestaurant"
+                android:text="Lunch" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/radioButtonlunch"
+                android:layout_alignBottom="@+id/radioButtonlunch"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="63dp"
+                android:text="Dinner" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</LinearLayout>
